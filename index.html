@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   </head>
+  <body>
+    
+    <fieldset>
+      <legend>My Form</legend>
+      <form>
+        <label for="fname">Enter first name:</label>
+        <input type="text" name="firstname" id="fname" placeholder="eg:John"/><br />
+        <label for="sname">Enter surname:</label>
+        <input type="text" name="surname" id="sname" placeholder="eg:William"/><br />
+        <label for="num">Enter phone number:</label>
+        <input type="tel" name="number" id="num" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/><br />
+        <label for="mail">Enter email address</label>
+        <input type="email" name="email" id="mail" placeholder="rst@gmail.com"/><br />
+        <label for="gen">Gender</label>
+        <input type="radio" id="gen" name="gender" value="Male" />Male
+        <input type="radio" id="gen" name="gender" value="Female" />Female<br />
+        <label for="dob">Choose your DOB</label>
+        <input type="date" id="dob" name="dob" /><br />
+        <label for="password">Enter your password</label>
+        <input type="password" id="password" name="password" /><br />
+        <label for="time">Enter Last login time</label>
+        <input type="time" name="time" id="time" /><br />
+        <label>Enter your hobbies:</label><br />
+        <textarea rows="6" cols="18"></textarea><br />
+        <label>Choose your specialization</label>
+        <input type="checkbox" name="check" value="hockey" />Hockey
+        <input type="checkbox" name="check" value="cricket" />Cricket
+        <input type="checkbox" name="check" value="kabadi" />Kabadi
+        <input type="checkbox" name="check" value="badmintion" />Badmintion<br>
+        <label for="clr">Choose favourite color</label>
+        <select name="color" id="clr">
+            <optgroup label="dark">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="yellow">yellow</option>
+            <option value="orange">orange</option>
+            <option value="blue">blue</option>
+            </optgroup>
+            <optgroup label="light">
+                <option value="white">White</option>
+                <option value="violet">violet</option>
+                <option value="pink">pink</option>
+            </optgroup>
+        </select><br>
+        <label for="da">Choose a day</label>
+        <input list="my days" id="da" name="day">
+        <datalist id="my days">
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>thursday</option>
+        </datalist>
+
+        <input type="Submit" />
+      </form>
+    </fieldset>
+  </body>
+</html>
